@@ -7,7 +7,7 @@ import com.practice.list.R
 import com.practice.list.datas.Shoes
 import kotlin.coroutines.coroutineContext
 
-class Adapter(context:Context, resId:Int, List:ArrayList<Shoes>) : ArrayAdapter<Shoes> (context, resId, List)
+class Adapter(context:Context, resId:Int, list:ArrayList<Shoes>) : ArrayAdapter<Shoes> (context, resId, list)
 
 
 val mContext = Context
@@ -24,5 +24,5 @@ getview =
 
 val row = tempRow!!
 return row
-}
+
 }
