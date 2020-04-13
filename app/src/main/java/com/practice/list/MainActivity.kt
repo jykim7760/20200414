@@ -2,6 +2,7 @@ package com.practice.list
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.practice.list.adaters.Adapter
 import com.practice.list.datas.Shoes
 import kotlinx.android.synthetic.main.activity_main.*
@@ -27,5 +28,15 @@ class MainActivity : AppCompatActivity() {
         mRoomAdapter = Adapter(this, R.layout.room_list_item, roomList)
         roomListView.adapter = mRoomAdapter
 
+        roomListView.setOnItemClickListener { parent, view, position, id -> }
+//        몇번줄을 눌럿는지 테스트로 출력
+        Toast.makeText(this, "${position}번 줄 클릭", Toast.LENGTH_SHORT)show()
+
+
     }
+
+    roomListView.setOnI
+
+
+
 }
