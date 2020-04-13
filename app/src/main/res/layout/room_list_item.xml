@@ -23,6 +23,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/pricetxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="22sp"
@@ -31,6 +32,7 @@
                 android:text="가격자리"/>
 
             <TextView
+                android:id="@+id/floor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="주소, 층수"
@@ -39,7 +41,7 @@
                 android:textColor="#000000"/>
 
             <TextView
-                android:id="@+id/desc"
+                android:id="@+id/subtxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="설명자리"/>
