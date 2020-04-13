@@ -9,20 +9,19 @@ import kotlin.coroutines.coroutineContext
 
 class Adapter(context:Context, resId:Int, list:ArrayList<Shoes>) : ArrayAdapter<Shoes> (context, resId, list)
 
-
-val mContext = Context
-val mList = List
+val mContext = context
+val mList = list
 val inf = LayoutInflater.from(mContext)
 
 
-getview =
-
-    var temRow = converView
-    if(temRow == null){
-    temRow = inf.inflate(R.layout.room_list_item)
+    var tempRow = convertView
+    if (tempRow == null){
+    tempRow = inf.inflate(R.layout.room_list_item, null)
 }
 
 val row = tempRow!!
 return row
 
-}
+//
+
+
